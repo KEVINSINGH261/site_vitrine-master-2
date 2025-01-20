@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <title>SkillBoost Academy</title>
+</head>
+
+<body>
+  <div class="hero_area">
+    <div class="bg-box">
+      <img src="../../../assets/images/business-background.png" alt="Background">
+    </div>
+
+    <!-- Slider Section -->
+    <section class="slider_section">
+      <div id="customCarousel1" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-7 col-lg-6">
+                  <div class="detail-box">
+                    <h1>Pourquoi nous choisir ?</h1>
+                    <p>
+                      Chez SkillBoost Academy, nous offrons des formations en ligne adaptées à vos besoins professionnels.
+                      Profitez de contenus actualisés, d'une flexibilité d'apprentissage et d'un support dédié.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-7 col-lg-6">
+                  <div class="detail-box">
+                    <h1>Apprenez à votre rythme</h1>
+                    <p>
+                      Nos cours sont conçus pour s'adapter à votre emploi du temps et vous offrir la meilleure expérience d'apprentissage.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-7 col-lg-6">
+                  <div class="detail-box">
+                    <h1>Devenez un expert</h1>
+                    <p>
+                      Développez vos compétences et boostez votre carrière grâce à nos formations de qualité.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel Controls -->
+        <a class="carousel-control-prev" href="#customCarousel1" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Précédent</span>
+        </a>
+        <a class="carousel-control-next" href="#customCarousel1" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Suivant</span>
+        </a>
+
+        <!-- Carousel Indicators -->
+        <div class="container">
+          <ol class="carousel-indicators">
+            <li data-bs-target="#customCarousel1" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#customCarousel1" data-bs-slide-to="1"></li>
+            <li data-bs-target="#customCarousel1" data-bs-slide-to="2"></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- About Section -->
+  <section class="about_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="img-box">
+            <img src="../../../assets/images/Formation-Trading-scaled.jpeg" alt="Formation">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <h2>Qui Sommes-Nous ?</h2>
+            <p>
+              SkillBoost Academy est une plateforme de formation en ligne dédiée à l'évolution professionnelle.
+              Nous proposons des formations diversifiées, conçues par des experts, pour vous aider à acquérir les compétences nécessaires.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    $(document).ready(function(){
+      $('#customCarousel1').carousel({
+        interval: 3000,
+        ride: 'carousel'
+      });
+    });
+  </script>
+
+</body>
+</html>

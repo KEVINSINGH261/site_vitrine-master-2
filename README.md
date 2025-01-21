@@ -1,59 +1,65 @@
-# SiteVitrine
+# KevinArsan
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.4.
+## Description
+SkillBoost Academy est une application web développée en Angular. Ce site offre la possibilité d'acheter des formations en ligne dans le domaine de la finance et du marketing.
 
-## Development server
+## Prérequis
+Avant de commencer, assurez-vous d'avoir les éléments suivants installés :
+- [Node.js](https://nodejs.org/)
+- [Angular CLI](https://angular.io/cli)
 
-To start a local development server, run:
+## Installation
 
-```bash
-ng serve
-```
+Voici les commandes à effectuer dans le terminal :
+1. Commencez par cloner le projet :
+   ```bash
+   git clone https://github.com/username/mon-site-angular.git
+   ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+2. Puis allez dans le dossier du projet :
+   ```bash
+   cd site_vitrine_master_2
+   ```
 
-## Code scaffolding
+3. Ensuite, exécutez cette commande pour installer les dépendances du projet :
+   ```bash
+   npm install
+   ```
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+4. Pour finir, lancez le projet :
+   ```bash
+   ng serve
+   ```
 
-```bash
-ng generate component component-name
-```
+## Ajouter des Pages et Comprendre les Composants
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### Ajouter une Nouvelle Page
+1. Créez un nouveau composant Angular pour la page en utilisant Angular CLI :
+   ```bash
+   ng generate component nom-de-la-page
+   ```
+   Cela crée un dossier avec les fichiers nécessaires (`.html`, `.css`, `.ts`, `.spec.ts`) dans le répertoire `src/app`.
 
-```bash
-ng generate --help
-```
+2. Ajoutez la route pour la nouvelle page dans le fichier `app-routing.module.ts` :
+   ```typescript
+   import { NomDeLaPageComponent } from './nom-de-la-page/nom-de-la-page.component';
 
-## Building
+   const routes: Routes = [
+     { path: 'nom-de-la-page', component: NomDeLaPageComponent },
+     // autres routes
+   ];
+   ```
 
-To build the project run:
+3. Mettez à jour la navigation (par exemple, dans le fichier `app.component.html`) pour inclure un lien vers la nouvelle page :
+   ```html
+   <a routerLink="/nom-de-la-page">Nom de la Page</a>
+   ```
 
-```bash
-ng build
-```
+### Fonctionnement des Composants
+- **Composants Angular** : Ce sont les blocs de construction de base d'une application Angular. Chaque composant se compose de quatre fichiers principaux :
+  - `.html` : Contient le template HTML du composant.
+  - `.css` : Contient les styles spécifiques au composant.
+  - `.ts` : Contient la logique du composant (classe TypeScript).
+  - `.spec.ts` : Fichier de test pour le composant.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
